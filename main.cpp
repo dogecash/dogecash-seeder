@@ -397,7 +397,7 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"seed.dogec.io", ""};
+static const string mainnet_seeds[] = {"139.180.216.73", ""};
 static const string testnet_seeds[] = {"testseed.dogec.io", ""};
 static const string *seeds = mainnet_seeds;
 
@@ -455,10 +455,10 @@ int main(int argc, char **argv) {
   bool fDNS = true;
   if (opts.fUseTestNet) {
       printf("Using testnet.\n");
-      pchMessageStart[0] = 0x0b;
-      pchMessageStart[1] = 0x11;
-      pchMessageStart[2] = 0x09;
-      pchMessageStart[3] = 0x07;
+      pchMessageStart[0] = 0xa0;
+      pchMessageStart[1] = 0x43;
+      pchMessageStart[2] = 0x16;
+      pchMessageStart[3] = 0x19;
       seeds = testnet_seeds;
       fTestNet = true;
   }
