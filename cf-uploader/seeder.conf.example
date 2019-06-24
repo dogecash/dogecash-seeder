@@ -1,7 +1,7 @@
 [general]
 domain=dogec.io
 name=seeds
-user=Liquid369@gmail.com
-key=953fc805d62b718fc48615ffc8108edec806b
+user=
+key=
 seed_dump=/root/dogecash-seeder/dnsseed.dump
 hard_seeds=/root/dogecash-seeder/hardseeds.txt
