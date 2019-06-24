@@ -1,7 +1,7 @@
 [general]
-domain=litecoinca.sh
-name=autoseeds
-user=your@email.com
-key=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-seed_dump=/path/to/dnsseed.dump
-hard_seeds=/path/to/hardseeds.txt
+domain=dogec.io
+name=seeds
+user=Liquid369@gmail.com
+key=953fc805d62b718fc48615ffc8108edec806b
+seed_dump=/root/dogecash-seeder/dnsseed.dump
+hard_seeds=/root/dogecash-seeder/hardseeds.txt
