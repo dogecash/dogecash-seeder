@@ -24,7 +24,7 @@ def main():
     logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
 
     try:
-        seed_candidates = parser.read_seed_dump(configuration['seed_dump'], custom_port)
+        #seed_candidates = parser.read_seed_dump(configuration['seed_dump'], custom_port)
         hard_seeds = parser.read_hard_seeds(configuration['hard_seeds'])
     except errors.SeedsNotFound as e:
         print("ERROR: Problem reading seeds - {}".format(e.message))
