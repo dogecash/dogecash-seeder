@@ -58,9 +58,9 @@ def read_hard_seeds(hard_seeds_file):
 
     logger.debug("Reading seeds dump file: {}".format(seeds_file))
 
-    valid_port = "62458" if valid_port is None else valid_port """
+    valid_port = "62458" if valid_port is None else valid_port 
 
-   """ addresses = []
+    addresses = []
     with open(seeds_file) as seeds:
 
         for line in seeds:
