@@ -52,7 +52,7 @@ def read_hard_seeds(hard_seeds_file):
     return hard_seeds
 
 
-def read_seed_dump(seeds_file, valid_port=None):
+"""def read_seed_dump(seeds_file, valid_port=None):
 
     """ Read the good ip addresses from the seeds dump. """
 
@@ -85,7 +85,7 @@ def read_seed_dump(seeds_file, valid_port=None):
                 logger.debug("Read a good seed: IP {} PORT {}".format(ip_addr, port))
 
     logger.info("Found {} good ip addresses from dump file.".format(len(addresses)))
-
+"""
     if not addresses:
         raise errors.SeedsNotFound("No good seeds read from seeds dump file: {}".format(seeds_file))
 
