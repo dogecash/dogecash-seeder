@@ -44,7 +44,7 @@ def main():
         current_good_seeds = current_seeds
 
     # Get the first MAX_SEEDS from unique combination of hard_seeds and candidates from seeder dump seed in seed_candidates if 
-    seed_selection = (hard_seeds)[:MAX_SEEDS]
+    seed_selection = (current_good_seeds)[:MAX_SEEDS]
 
     # Prune
     if len(current_good_seeds) >= MAX_SEEDS:
