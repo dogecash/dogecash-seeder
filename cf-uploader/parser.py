@@ -54,7 +54,7 @@ def read_hard_seeds(hard_seeds_file):
 
 """def read_seed_dump(seeds_file, valid_port=None):
 
-    """ Read the good ip addresses from the seeds dump. """
+    Read the good ip addresses from the seeds dump.
 
     logger.debug("Reading seeds dump file: {}".format(seeds_file))
 
