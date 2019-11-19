@@ -62,7 +62,7 @@ def main():
         if seed in current_good_seeds:
             to_add.append(seed)
 
-    cloudflare.set_seeds(to_add)
+    cloudflare.set_seeds(seed_selection)
 
 
 if __name__ == "__main__":
