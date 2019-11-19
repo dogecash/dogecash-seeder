@@ -36,7 +36,7 @@ def main():
     logger.debug("Detected current seeds in cloudflare: {}".format(current_seeds))
 
     # Remove stale seeds (not in our hard seeds or candidate list not in seed_candidates and seed
-    stale_current_seeds = [seed for seed in current_seeds if seed not in hard_seeds]
+    stale_current_seeds = [seed for seed in current_seeds if seed in hard_seeds]
     if stale_current_seeds:
         cloudflare.delete_seeds(stale_current_seeds)
         current_good_seeds = [seed for seed in current_seeds if seed not in stale_current_seeds]
