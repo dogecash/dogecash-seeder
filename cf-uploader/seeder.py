@@ -59,7 +59,7 @@ def main():
     for seed in seed_selection:
         if len(to_add) >= shortfall:
             break
-        if seed not in current_good_seeds:
+        if seed in current_good_seeds:
             to_add.append(seed)
 
     if len(to_add):
