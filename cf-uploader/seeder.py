@@ -39,9 +39,11 @@ def main():
     stale_current_seeds = [seed for seed in current_seeds if seed not in hard_seeds]
     if stale_current_seeds:
         cloudflare.delete_seeds(stale_current_seeds)
+        cloudflare.delete_seeds(current_seeds)
         current_good_seeds = [seed for seed in current_seeds if seed not in stale_current_seeds]
     else:
         current_good_seeds = hard_seeds
+        cloudflare.delete_seeds(current_seeds)
 
     # Get the first MAX_SEEDS from unique combination of hard_seeds and candidates from seeder dump seed in seed_candidates if 
     seed_selection = (current_good_seeds)[:MAX_SEEDS]
